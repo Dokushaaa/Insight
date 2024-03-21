@@ -788,18 +788,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (min-width: 768px) {
-  .header__wrapper {
-    display: block;
-  }
-}
-
 .burgir__menu.open span:first-child {
   z-index: 50;
   --tw-translate-y: 10px;
@@ -1141,20 +1129,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .project-content::after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0 0 0 / 0.6);
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-    --tw-content: '';
-    content: var(--tw-content);
-  }
-
   .project-content:hover::after {
     --tw-scale-x: 0;
     --tw-scale-y: 0;
@@ -1634,6 +1608,28 @@ video {
   width: 100%;
   max-width: 90rem;
   padding: 1.5rem;
+}
+
+.shabulords {
+  z-index: 50;
+}
+
+@media (min-width: 768px) {
+  .shabulords {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 0.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(43 43 43 / var(--tw-bg-opacity));
+    padding: 1rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
 }
 
 .hover\:bg-light:hover {

@@ -6,8 +6,18 @@
 .container{
     @apply max-w-[90rem] p-6 w-full mx-auto;
 }
-
-
+.shabulords{
+    @apply md:fixed
+    md:w-[90%] 
+    md:p-[1rem] 
+    md:rounded-xl 
+    md:transition-all 
+    md:bg-dark z-50
+    md:left-0
+    md:right-0
+    md:mx-auto;
+  }
+  
 @layer components{
     .special__logo{
         /* @apply blur-sm rounded-2xl content-none animate-spin z-50 */
@@ -57,9 +67,7 @@
     .burgir__menu span:nth-child(2){
         @apply my-1;
     }
-    .header__wrapper{
-        @apply md:block flex items-center justify-between; 
-    }
+  
     .burgir__menu.open span:first-child{
         @apply transform translate-y-[10px] rotate-[225deg] transition-all duration-500 z-50 animate-pulse
     }
@@ -100,19 +108,7 @@
     .header__action .header__btn a{
         @apply text-center pb-2
     }
-    .shabulords {
-        @apply md:fixed
-        md:w-[90%] 
-        md:p-[1rem] 
-        md:rounded-xl 
-        md:transition-all 
-        md:bg-dark z-50
-        md:left-0
-        md:right-0
-        md:mx-auto;
-        
-      }
-      
+
       /* !~~~~~~~~~~ HEADER ~~~~~~~~~~! */
       
       
@@ -176,15 +172,7 @@
         @apply   transition-all duration-1000
         h-[550px] flex justify-center items-center
     }
-    .project-content::after {
-        @apply md:absolute 
-        md:top-0 
-        md:left-0
-        md:content-['']
-        md:w-full md:h-full
-        md:bg-black/60
-        md:transition-all;
-      }
+    
       .project-content:hover::after {
         @apply md:scale-0;
       }
